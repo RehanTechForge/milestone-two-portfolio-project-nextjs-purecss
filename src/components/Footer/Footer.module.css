@@ -1,0 +1,68 @@
+.footer{
+  display: flex;
+  justify-content: space-between;
+  background: #000;
+  padding: 0px 100px;
+  height: 400px;
+  align-items: center;
+}
+.footer > div{
+  color: white;
+}
+
+.footer div > ul {
+  display: flex;
+  gap: 15px;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-family: "League Spartan", sans-serif;
+  font-weight: bold;
+}
+.footer div > ul > li{
+  list-style: none;
+}
+.footer div >span > p {
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "League Spartan", sans-serif;
+
+}
+.footer div > span >p:last-child{
+  margin-top: 10px;
+}
+.mobRespShow{
+  display: none;
+    visibility: hidden;
+}
+@media (max-width: 828px) {
+  .mobResp{
+    display: none;
+    visibility: hidden;
+  }
+  .mobRespShow{
+    display: block;
+    visibility: visible;
+  }
+  .footerMidSection{
+    display: flex;
+    gap: 25px;
+  }
+  .footer{
+    flex-direction: column;
+    height: 300px;
+    justify-content: center;
+    gap: 50px;
+  }
+  .footerFirstSection{
+    width: 100%;
+  }
+  .footerFirstSection > ul {
+    font-size: 24px;
+    justify-content: center;
+  }
+}
+@media (max-width: 448px) {
+  .footerMidSection > span > p {
+    word-break: break-all;
+  }
+}
